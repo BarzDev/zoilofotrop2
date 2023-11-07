@@ -26,18 +26,19 @@ const Section1 = () => {
         Developer. Usually using React, Tailwind, Bootstrap, MongoDB as my
         tools.
       </p>
-      <div className="flex item-center justify-center sm:gap-3 gap-1 sm:p-0 p-7 ">
+      <div className="flex item-center justify-center sm:gap-3 gap-2 sm:p-0 p-7 ">
         {svg.map((svg, index) => {
           return (
             <div
-              key={svg}
-              className="sm:w-10 sm:h-10 w-7 h-7 relative border rounded-full border-2"
+              key={index}
+              className="sm:w-10 sm:h-10 w-9 h-9 relative border rounded-full border-2"
               data-aos="fade-up-left"
               data-aos-duration="3000"
             >
               <Image
                 className="p-1"
                 src={svg}
+                alt={svg + "icon"}
                 fill
                 style={{ objectFit: "contain" }}
               />

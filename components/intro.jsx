@@ -35,7 +35,7 @@ const Intro = () => {
         id="sec2"
         className="caveat font-bold sm:text-9xl text-6xl flex items-center sm:justify-end justify-center sm:pe-40 sm:ps-5 ps-0  text-center absolute w-ful h-3/6 bottom-0 right-0 left-0 border bg-blue-100 z-20"
       >
-        I'm Fakhrul Akbar
+        I&apos;m Fakhrul Akbar
       </div>
     </div>
   );
