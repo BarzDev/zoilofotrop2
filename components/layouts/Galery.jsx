@@ -1,5 +1,6 @@
 import Galery1 from "../galery1";
 import Galery2 from "../galery2";
+import Galery3 from "../galery3";
 
 const GaleryLayout = () => {
   const porto1 = [
@@ -19,6 +20,7 @@ const GaleryLayout = () => {
     "/2.5.png",
     "/2.6.png",
   ];
+  const porto3 = ["/3.1.png", "/3.2.png", "/3.3.png", "/3.4.png", "/3.5.png"];
   return (
     <>
       <div className="" data-aos="fade-right" data-aos-duration="2000">
@@ -29,6 +31,9 @@ const GaleryLayout = () => {
       <div className="flex sm:flex-row flex-col z-50">
         <Galery1 galery={porto1} />
         <Galery2 galery={porto2} />
+      </div>
+      <div className="flex sm:flex-row flex-col z-50">
+        <Galery3 galery={porto3} />
       </div>
     </>
   );
