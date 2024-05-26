@@ -2,23 +2,26 @@
 import React from "react";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
-import Detail2 from "./acordion2";
 
-function Galery2(props) {
-  const { galery } = props;
+import { Detail } from "./accordion";
+
+export function Galery(props) {
+  const { porto } = props;
+  const images = porto.img;
 
   return (
     <div
-      className="flex flex-col sm:w-1/2 w-full p-5 z-50"
+      key={porto.id}
+      className="flex flex-col sm:w-1/2 w-full p-5  z-50"
       data-aos="zoom-in"
       data-aos-duration="2000"
     >
       <div className=" w-full">
-        <Detail2 />
+        <Detail porto={porto} />
       </div>
-      <div className="h-56 sm:h-96 xl:h-80 2xl:h-96 w-full">
+      <div className="h-40 sm:h-96 xl:h-80 2xl:h-96 w-full">
         <Carousel
-          className="sm:h-full h-40  rounded-lg bg-slate-500"
+          className="sm:h-full h-40 rounded-lg bg-slate-500"
           slide={false}
           style={{
             position: "relative",
@@ -26,7 +29,7 @@ function Galery2(props) {
             left: "0",
           }}
         >
-          {galery.map((image, index) => {
+          {images.map((image, index) => {
             return (
               <Image
                 key={index}
@@ -45,5 +48,3 @@ function Galery2(props) {
     </div>
   );
 }
-
-export default Galery2;

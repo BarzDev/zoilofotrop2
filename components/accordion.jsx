@@ -3,23 +3,21 @@
 import { Accordion, Button } from "flowbite-react";
 import Link from "next/link";
 
-const Detail2 = () => {
+export const Detail = (props) => {
+  const { porto } = props;
   return (
     <Accordion collapseAll>
       <Accordion.Panel>
         <Accordion.Title className="playpen text-black bg-gray-100">
-          Barz Wedding?
+          {porto.title}
         </Accordion.Title>
         <Accordion.Content className="bg-slate-300">
           <p className="playpen sm:text-justify text-left sm:text-base text-xs">
-            Barz Wedding is an invitation web which created use Next.Js,
-            Tailwind, daisyUI, Flowbite, AOS. Which can use for wedding
-            invitatin, birthday invitation, party invitation, etc
+            {porto.description}
           </p>
-
           <Button
             as={Link}
-            href={"https://barwedding.vercel.app/"}
+            href={porto.link}
             target="blank"
             color="dark"
             className="mt-2 sm:w-40 w-auto"
@@ -46,4 +44,3 @@ const Detail2 = () => {
     </Accordion>
   );
 };
-export default Detail2;

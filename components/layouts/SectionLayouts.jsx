@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-const Section1 = () => {
+const Section = () => {
   const svg = [
     "reactjs.svg",
     "tailwindcss.svg",
@@ -39,6 +39,7 @@ const Section1 = () => {
                 className="p-1"
                 src={svg}
                 fill
+                alt={svg}
                 style={{ objectFit: "contain" }}
               />
             </div>
@@ -55,4 +56,4 @@ const Section1 = () => {
     </section>
   );
 };
-export default Section1;
+export default Section;
