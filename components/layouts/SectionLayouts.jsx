@@ -27,7 +27,7 @@ const Section = () => {
         tools.
       </p>
       <div className="flex item-center justify-center sm:gap-3 gap-1 sm:p-0 p-7 ">
-        {svg.map((svg, index) => {
+        {svg.map((svg) => {
           return (
             <div
               key={svg}

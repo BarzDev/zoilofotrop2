@@ -32,6 +32,7 @@ export function Galery(props) {
           {images.map((image, index) => {
             return (
               <Image
+                className="z-20"
                 key={index}
                 src={image}
                 fill

@@ -5,8 +5,6 @@ const Loader = () => {
   useEffect(() => {
     let top = document.getElementById("top");
     let bot = document.getElementById("bot");
-    let left = document.getElementById("left");
-    let right = document.getElementById("right");
 
     const handleScroll = () => {
       const value = window.scrollY;
@@ -26,7 +24,7 @@ const Loader = () => {
     };
   }, []);
   return (
-    <div className="fixed h-screen w-screen z-20">
+    <div className="fixed h-screen w-screen z-50">
       <span
         id="top"
         className="absolute top-0 right-0  "

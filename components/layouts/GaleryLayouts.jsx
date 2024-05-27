@@ -1,12 +1,13 @@
 import { portoList } from "@/data/porto";
 import { Galery } from "../galery";
+import { Title } from "../react-type/hello";
 
 const GaleryLayout = () => {
   return (
     <>
       <div className="" data-aos="fade-right" data-aos-duration="2000">
         <h1 className="playpen p-5 text-center drop-shadow text-white sm:text-5xl text-2xl">
-          My Mini Project
+          <Title />
         </h1>
       </div>
       <div className="flex sm:flex-row flex-col flex-wrap z-30">

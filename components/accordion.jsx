@@ -24,7 +24,7 @@ export const Detail = (props) => {
           >
             Launch Demo
             <svg
-              class="w-6 h-6 text-white ps-1"
+              className="w-6 h-6 text-white ps-1"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -32,9 +32,9 @@ export const Detail = (props) => {
             >
               <path
                 stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
                 d="M1 5h18M1 5v14h18V5M1 5V1h18v4M5 5l3-4m1.215 4 3-4m1.215 4 3-4M8.007 8v8l5.416-4-5.416-4Z"
               />
             </svg>
