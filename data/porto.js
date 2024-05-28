@@ -19,7 +19,7 @@ export const portoList = [
     id: 2,
     title: "Card Hero List?",
     description:
-      "Card hero list, is an API fetch hero from dota2 game, and display it in a card list, display detail match perhero in the list. Sorting feature by primary attribute, and search feature will be comming soon.",
+      "Card hero list, is an API fetch hero from dota2 game, and display it in a card list, display detail match perhero in the list. Sorting feature by primary attribute, and search feature by name.",
     link: "https://card-list-dota-api.vercel.app",
     img: ["/3.1.png", "/3.2.png", "/3.3.png", "/3.4.png", "/3.5.png"],
   },

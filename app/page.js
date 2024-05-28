@@ -1,38 +1,37 @@
 "use client";
-
-import Intro from "@/components/intro";
-import GaleryLayout from "@/components/layouts/GaleryLayouts";
-import Loader from "@/components/loader";
-
-import Aos from "aos";
-import "aos/dist/aos.css";
-import { useEffect, useRef, useState } from "react";
-import Component from "@/components/footer";
-import Section from "@/components/layouts/SectionLayouts";
+import { useRef } from "react";
+import { Intro } from "@/components/layouts/Intro";
+import { AboutMe } from "@/components/layouts/aboutMe";
+import { Project } from "@/components/layouts/project";
+import { Skills } from "@/components/layouts/skill";
+import Navbar from "@/components/ui/navbar";
 
 export default function Home() {
-  // const [isClient, setIsClient] = useState(false);
+  const aboutMeRef = useRef(null);
+  const skillsRef = useRef(null);
+  const projectsRef = useRef(null);
+  const homeRef = useRef(null);
 
-  const aboutRef = useRef(null);
-  const portoRef = useRef(null);
-
-  useEffect(() => {
-    // setIsClient(true);
-    Aos.init();
-  }, []);
   return (
-    <main className="overflow-hidden h-auto">
-      <Loader />
-      <Intro />
-      <div ref={aboutRef} className="h-screen bg-sky-900 relative">
-        <Section />
-      </div>
-      <div ref={portoRef} className="min-h-screen bg-blue-500 relative">
-        <GaleryLayout />
-      </div>
-      <div className="playpen relative">
-        <Component aboutRef={aboutRef} portoRef={portoRef} />
-      </div>
+    <main className="bg-slate-950 text-white h-[200vh]">
+      <section ref={homeRef}>
+        <Intro />
+      </section>
+      <Navbar
+        aboutMeRef={aboutMeRef}
+        skillsRef={skillsRef}
+        projectsRef={projectsRef}
+        home={homeRef}
+      />
+      <section ref={aboutMeRef} className="pt-14">
+        <AboutMe ref={aboutMeRef} />
+      </section>
+      <section ref={skillsRef} className="pt-14">
+        <Skills />
+      </section>
+      <section ref={projectsRef} className="pt-14">
+        <Project />
+      </section>
     </main>
   );
 }

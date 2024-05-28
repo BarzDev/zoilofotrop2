@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
-import { Hello } from "./react-type/hello";
+import { Hello } from "./version-1/react-type/hello";
 
 const Intro = () => {
   useEffect(() => {

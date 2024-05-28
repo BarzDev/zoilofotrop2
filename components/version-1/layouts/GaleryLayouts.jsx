@@ -1,5 +1,5 @@
 import { portoList } from "@/data/porto";
-import { Galery } from "../galery";
+import { Galery } from "../../galery";
 import { Title } from "../react-type/hello";
 
 const GaleryLayout = () => {
