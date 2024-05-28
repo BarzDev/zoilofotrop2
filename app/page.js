@@ -17,19 +17,23 @@ export default function Home() {
       <section ref={homeRef}>
         <Intro />
       </section>
+
       <Navbar
         aboutMeRef={aboutMeRef}
         skillsRef={skillsRef}
         projectsRef={projectsRef}
         home={homeRef}
       />
-      <section ref={aboutMeRef} className="pt-14">
+
+      <section ref={aboutMeRef} className="pt-16">
         <AboutMe ref={aboutMeRef} />
       </section>
-      <section ref={skillsRef} className="pt-14">
+
+      <section ref={skillsRef} className="pt-16">
         <Skills />
       </section>
-      <section ref={projectsRef} className="pt-14">
+
+      <section ref={projectsRef} className="pt-16">
         <Project />
       </section>
     </main>

@@ -1,7 +1,7 @@
 export const AboutMe = () => {
   return (
-    <div>
-      <h1>aboiut me</h1>
+    <div className="ps-48">
+      <p className="playpen text-3xl font-bold">About me</p>
     </div>
   );
 };

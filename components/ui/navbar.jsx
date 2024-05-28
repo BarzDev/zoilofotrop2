@@ -3,16 +3,16 @@ const Navbar = ({ home, aboutMeRef, skillsRef, projectsRef }) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="sticky top-0 bg-slate-500 flex items-center justify-center font-bold text-white lg:text-lg sm:text-base text-xs">
+    <div className="sticky top-0 bg-slate-500 flex items-center justify-center font-bold text-white lg:text-lg sm:text-base text-xs z-50">
       <div
-        className="px-10 py-4 hover:bg-teal-500 w-48 h-14 "
+        className="px-10 py-4 hover:bg-violet-500 w-48 h-14 "
         style={styles.container}
         onClick={() => handleScroll(home)}
       >
         <div>Home</div>
       </div>
       <div
-        className="px-10 py-4 hover:bg-rose-500 w-48 h-14  "
+        className="px-10 py-4 hover:bg-emerald-500 w-48 h-14  "
         style={{ ...styles.container, marginLeft: "-3rem" }}
         onClick={() => handleScroll(aboutMeRef)}
       >
@@ -42,14 +42,6 @@ const styles = {
     textAlign: "center",
     cursor: "pointer",
     clipPath: "polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%)",
-  },
-
-  title: {
-    color: "red",
-  },
-  subtitle: {
-    color: "green",
-    fontSize: "15px",
   },
 };
 
