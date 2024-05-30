@@ -1,7 +1,17 @@
+import { portoList } from "@/data/porto";
+import { Galery } from "../ui/galery";
+
 export const Project = () => {
   return (
     <div>
-      <h1>project</h1>
+      <p className="playpen text-3xl font-bold ps-48">Mini Project</p>
+      <div>
+        <Galery porto={portoList[0]} />
+        {/* <Galery porto={portoList[1]} />
+        <Galery porto={portoList[2]} />
+        <Galery porto={portoList[3]} />
+        <Galery porto={portoList[4]} /> */}
+      </div>
     </div>
   );
 };

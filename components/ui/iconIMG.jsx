@@ -1,34 +1,38 @@
 "use client";
 
 import Image from "next/image";
-
 import { useState } from "react";
-export const IconImage = (props) => {
-  const { title, img, color, w, bg } = props;
+import clsx from "clsx";
 
-  const fontColor = color ? `text-${color}-500` : "text-black";
-  const border = color ? `border-${color}-500` : "";
+export const IconImage = (props) => {
+  const { title, img, border, color, hover, bg } = props;
+
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className={`w-14 hover:w-${w} hover:h-18 border h-18 flex items-center justify-center border border-2 ${border} rounded-lg p-2 cursor-pointer ${bg}`}
+      className={clsx(
+        "w-14  h-18 flex items-center justify-center border-2 rounded-lg p-2 cursor-pointer ",
+        color,
+        hover,
+        border,
+        bg
+      )}
       style={{ transition: "all .5s ease" }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <p
-        className={`transition-width ${
-          isHovered
-            ? `w-20 text-center font-bold ${fontColor}`
-            : "w-0 overflow-hidden"
-        }`}
+        className={clsx(
+          "transition-width text-center font-bold",
+          isHovered ? `w-20 ${color}` : "w-0 overflow-hidden"
+        )}
         style={{ transition: "width .2s ease" }}
       >
         {title}
       </p>
       <div className="relative w-40 h-10 z-10">
-        <Image src={img} alt="html" fill style={{ objectFit: "contain" }} />
+        <Image src={img} alt={title} fill style={{ objectFit: "contain" }} />
       </div>
     </div>
   );

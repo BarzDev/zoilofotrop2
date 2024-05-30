@@ -3,8 +3,6 @@ import React from "react";
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 
-import { Detail } from "./accordion";
-
 export function Galery(props) {
   const { porto } = props;
   const images = porto.img;
@@ -12,14 +10,12 @@ export function Galery(props) {
   return (
     <div
       key={porto.id}
-      className="flex flex-col sm:w-1/2 w-full p-5  z-50"
-      data-aos="zoom-in"
-      data-aos-duration="2000"
+      className="flex md:flex-row-reverse flex-col items-center justify-between  w-full p-5  z-50 border border-red-500"
     >
-      <div className=" w-full">
-        <Detail porto={porto} />
+      <div className="flex items-center justify-center border sm:w-1/2 w-full">
+        Title Descriptrin
       </div>
-      <div className="h-40 sm:h-96 xl:h-80 2xl:h-96 w-full">
+      <div className="h-40 sm:h-96 xl:h-80 2xl:h-96 sm:w-1/2 w-full">
         <Carousel
           className="sm:h-full h-40 rounded-lg bg-slate-500"
           slide={false}
