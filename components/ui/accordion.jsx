@@ -8,11 +8,11 @@ export const DetailAccordion = (props) => {
   return (
     <Accordion collapseAll>
       <Accordion.Panel>
-        <Accordion.Title className="playpen text-black bg-gray-100">
+        <Accordion.Title className=" text-black bg-gray-100">
           {porto.title}
         </Accordion.Title>
         <Accordion.Content className="bg-slate-300">
-          <p className="playpen sm:text-justify text-left sm:text-base text-xs text-slate-950">
+          <p className=" sm:text-justify text-left sm:text-base text-xs text-slate-950">
             {porto.description}
           </p>
           <Button
