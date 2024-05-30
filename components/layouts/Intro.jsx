@@ -1,3 +1,4 @@
+import { Hai } from "../ui/hi";
 import { Typing } from "../ui/react-typing";
 
 export const Intro = () => {
@@ -21,8 +22,12 @@ export const Intro = () => {
   return (
     <div className="sm:h-96 h-28 kanit-medium  flex items-center  justify-center">
       <div className="flex flex-col text-3xl sm:text-7xl">
-        <p className="w-auto lg:w-[910px]">Hello..</p>
-        {/* <Typing words={introLines} /> */}
+        <div className="flex w-auto lg:w-[910px] items-center">
+          <p className="">Hello..</p>
+          <Hai />
+          <Hai />
+        </div>
+        <Typing words={introLines} />
       </div>
     </div>
   );

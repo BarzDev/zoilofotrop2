@@ -1,9 +1,9 @@
 export const portoList = [
   {
     id: 1,
-    title: "Barz Store?",
+    title: "Web Store",
     description:
-      "Barz Store is an ecommerce store which created use Next.js, Taildwind, and a some Public API. Do fetch product with API, make a cart, and create transaction history.",
+      "This is an e-commerce web store created using Next.js, Tailwind, and some public APIs. It fetches products using public APIs, has a cart feature, and can create transaction history.",
     link: "https://barz-store.vercel.app/",
     img: [
       "/portoStore/1.png",
@@ -17,9 +17,9 @@ export const portoList = [
 
   {
     id: 2,
-    title: "Card Hero List?",
+    title: "Dota Hero List",
     description:
-      "Card hero list, is an API fetch hero from dota2 game, and display it in a card list, display detail match perhero in the list. Sorting feature by primary attribute, and search feature by name.",
+      "This is a card hero list. It fetches hero data from the Dota 2 game API and displays it in a card list. It also displays match details for each hero in the list. The app includes sorting features by primary attribute and a search feature by name.",
     link: "https://card-list-dota-api.vercel.app",
     img: [
       "/portoCard/1.png",
@@ -31,9 +31,9 @@ export const portoList = [
   },
   {
     id: 3,
-    title: " Barz Wedding?",
+    title: "Invitation Web",
     description:
-      "Barz Wedding is an invitation web which created use Next.Js, Tailwind, daisyUI, Flowbite, AOS. Which can use for wedding invitatin, birthday invitation, party invitation, etc",
+      "This is an invitation web created using Next.js, Tailwind, daisyUI, Flowbite, and AOS. It can be used for wedding invitations, birthday invitations, party invitations, etc.",
     link: "https://barwedding.vercel.app/",
     img: [
       "/portoWedding/1.png",
@@ -46,6 +46,9 @@ export const portoList = [
   },
   {
     id: 4,
+    title: "Todo-APP",
+    description:
+      "This is a CRUD app that can be used to create, edit, and delete todos. It was created using Vue.js and Tailwind.",
     link: "https://vue-todo-app-barzdevs-projects.vercel.app",
     img: [
       "/portoVue/1.png",
@@ -57,6 +60,9 @@ export const portoList = [
   },
   {
     id: 5,
+    title: "POS",
+    description:
+      "This is a point of sales app created using Next.js, with two user roles: admin and user.",
     link: "https://pos-front-end-next-js.vercel.app/login?callbackUrl=%2F",
     img: [
       "/portoPOS/1.png",

@@ -3,6 +3,7 @@ const nextConfig = {
   images: {
     domains: ["flowbite.s3.amazonaws.com"],
     domains: ["www.iconfinder.com"],
+    domains: ["media.giphy.com"],
   },
 };
 

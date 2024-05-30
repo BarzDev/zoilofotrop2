@@ -3,7 +3,7 @@
 import { Accordion, Button } from "flowbite-react";
 import Link from "next/link";
 
-export const Detail = (props) => {
+export const DetailAccordion = (props) => {
   const { porto } = props;
   return (
     <Accordion collapseAll>
@@ -12,7 +12,7 @@ export const Detail = (props) => {
           {porto.title}
         </Accordion.Title>
         <Accordion.Content className="bg-slate-300">
-          <p className="playpen sm:text-justify text-left sm:text-base text-xs">
+          <p className="playpen sm:text-justify text-left sm:text-base text-xs text-slate-950">
             {porto.description}
           </p>
           <Button
@@ -25,7 +25,7 @@ export const Detail = (props) => {
             Launch Demo
             <svg
               className="w-6 h-6 text-white ps-1"
-              aria-hidden="true"
+              ariaHidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 20 20"

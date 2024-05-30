@@ -3,7 +3,7 @@ const Navbar = ({ home, aboutMeRef, skillsRef, projectsRef }) => {
     ref.current.scrollIntoView({ behavior: "smooth" });
   };
   return (
-    <div className="sticky top-0 bg-slate-500 flex items-center justify-center font-bold text-white lg:text-lg sm:text-base text-xs z-50">
+    <div className="sticky top-0 bg-slate-500 flex items-center justify-center font-bold text-white lg:text-lg sm:text-base text-xs z-50 md:mt-20 mt-0">
       <div
         className="px-10 py-4 hover:bg-violet-500 w-48 h-14 "
         style={styles.container}

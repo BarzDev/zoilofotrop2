@@ -4,7 +4,9 @@ import { IconSVG } from "../ui/iconSVG";
 export function Skills() {
   return (
     <div className="">
-      <p className="playpen text-3xl font-bold ps-48">Skill</p>
+      <p className="playpen md:text-3xl text-2xl font-bold md:pb-10 pb-5 md:ps-48 ps-0 md:text-left text-center">
+        Skill
+      </p>
 
       <div className="flex flex-wrap gap-3 items-center justify-center">
         <IconImage
