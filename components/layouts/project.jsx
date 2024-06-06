@@ -8,11 +8,9 @@ export const Project = () => {
         Mini Project
       </p>
       <div>
-        <Galery porto={portoList[0]} />
-        <Galery porto={portoList[1]} />
-        <Galery porto={portoList[2]} />
-        <Galery porto={portoList[3]} />
-        <Galery porto={portoList[4]} />
+        {portoList.map((porto) => {
+          return <Galery key={porto.id} porto={porto} />;
+        })}
       </div>
     </div>
   );

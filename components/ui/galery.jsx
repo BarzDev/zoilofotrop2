@@ -6,12 +6,12 @@ import Link from "next/link";
 import { DetailAccordion } from "./accordion";
 
 export function Galery(props) {
-  const { porto } = props;
+  const { porto, key } = props;
   const images = porto.img;
 
   return (
     <div
-      key={porto.id}
+      key={key}
       className="flex md:flex-row-reverse flex-col items-center justify-between  w-full p-5  z-50 h-full"
     >
       <div className=" md:w-1/2 w-full md:block hidden">
