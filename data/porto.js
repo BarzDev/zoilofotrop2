@@ -29,21 +29,21 @@ export const portoList = [
       "/portoCard/5.png",
     ],
   },
-  {
-    id: 3,
-    title: "Invitation Web",
-    description:
-      "This is an invitation web created using Next.js, Tailwind, daisyUI, Flowbite, and AOS. It can be used for wedding invitations, birthday invitations, party invitations, etc.",
-    link: "https://barwedding.vercel.app/",
-    img: [
-      "/portoWedding/1.png",
-      "/portoWedding/2.png",
-      "/portoWedding/3.png",
-      "/portoWedding/4.png",
-      "/portoWedding/5.png",
-      "/portoWedding/6.png",
-    ],
-  },
+  // {
+  //   id: 3,
+  //   title: "Invitation Web",
+  //   description:
+  //     "This is an invitation web created using Next.js, Tailwind, daisyUI, Flowbite, and AOS. It can be used for wedding invitations, birthday invitations, party invitations, etc.",
+  //   link: "https://barwedding.vercel.app/",
+  //   img: [
+  //     "/portoWedding/1.png",
+  //     "/portoWedding/2.png",
+  //     "/portoWedding/3.png",
+  //     "/portoWedding/4.png",
+  //     "/portoWedding/5.png",
+  //     "/portoWedding/6.png",
+  //   ],
+  // },
   {
     id: 4,
     title: "Todo-APP",
