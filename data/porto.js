@@ -48,7 +48,7 @@ export const portoList = [
     id: 5,
     title: "POS",
     description:
-      "This is a point of sales app created using Next.js, with two user roles: admin and user.",
+      "This is a point of sales app created using Next.js, with two user roles: admin and user. Admin can view trascation history and user can use the POS.",
     link: "https://pos-front-end-next-js.vercel.app/login?callbackUrl=%2F",
     img: [
       "/portoPOS/1.png",
@@ -57,6 +57,21 @@ export const portoList = [
       "/portoPOS/4.png",
       "/portoPOS/5.png",
       "/portoPOS/6.png",
+    ],
+  },
+
+  {
+    id: 6,
+    title: "Socmed Prototype",
+    description:
+      "This a prototype socmed build with MERN stack. With 3 dummy user which can be used to create post and comment, and can like a post as a feature too",
+    link: "https://socmed-prototype.vercel.app/",
+    img: [
+      "/portoSocmed/2.png",
+      "/portoSocmed/1.png",
+      "/portoSocmed/3.png",
+      "/portoSocmed/4.png",
+      "/portoSocmed/5.png",
     ],
   },
 ];

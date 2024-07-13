@@ -12,7 +12,7 @@ export function Galery(props) {
   return (
     <div
       key={key}
-      className="flex md:flex-row-reverse flex-col items-center justify-between  w-full p-5  z-50 h-full"
+      className="flex md:flex-row-reverse flex-col items-center justify-between gap-2  w-full p-5  z-50 h-full"
     >
       <div className=" md:w-1/2 w-full md:block hidden">
         <Details porto={porto} />
@@ -53,7 +53,7 @@ export function Galery(props) {
 
 const Details = ({ porto }) => {
   return (
-    <div className="md:px-24 p-5  h-80 border border-2 border-cyan-500 rounded-lg">
+    <div className="md:px-24 p-5  h-80  border-2 border-cyan-500 rounded-lg">
       <h1 className="text-center font-bold text-2xl md:pb-10 pb-5">
         {porto.title}
       </h1>
