@@ -25,7 +25,7 @@ export const DetailAccordion = (props) => {
             Launch Demo
             <svg
               className="w-6 h-6 text-white ps-1"
-              ariaHidden="true"
+              aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 20 20"
