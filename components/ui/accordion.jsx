@@ -18,7 +18,7 @@ export const DetailAccordion = (props) => {
           <Button
             as={Link}
             href={porto.link}
-            target="blank"
+            target={porto.category === "web" ? "_blank" : undefined}
             color="dark"
             className="mt-2 sm:w-40 w-auto"
           >

@@ -10,12 +10,16 @@ export const Intro = () => {
     },
     { title: "", time: 1000, color: "rgb(13 148 136)" },
     {
-      title: "I`m a Fullstack developer..",
+      title: "I`m a Software Developer..",
       time: 2000,
       color: "rgb(13 148 136)",
     },
     { title: "", time: 1000, color: "rgb(5 150 105)" },
-    { title: "I`m a Web developer..", time: 2000, color: "rgb(5 150 105)" },
+    {
+      title: "Create web and android apps..",
+      time: 2000,
+      color: "rgb(5 150 105)",
+    },
     { title: "", time: 500, color: "white" },
   ];
 

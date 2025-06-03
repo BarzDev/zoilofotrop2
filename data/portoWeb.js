@@ -1,7 +1,8 @@
-export const portoList = [
+export const portoWeb = [
   {
     id: 1,
     title: "Web Store",
+    category: "web",
     description:
       "This is an e-commerce web store created using Next.js, Tailwind, and some public APIs. It fetches products using public APIs, has a cart feature, and can create transaction history.",
     link: "https://barz-store.vercel.app/",
@@ -18,6 +19,7 @@ export const portoList = [
   {
     id: 2,
     title: "Dota Hero List",
+    category: "web",
     description:
       "This is a card hero list. It fetches hero data from the Dota 2 game API and displays it in a card list. It also displays match details for each hero in the list. The app includes sorting features by primary attribute and a search feature by name.",
     link: "https://card-list-dota-api.vercel.app",
@@ -33,6 +35,7 @@ export const portoList = [
   {
     id: 4,
     title: "Todo-APP",
+    category: "web",
     description:
       "This is a CRUD app that can be used to create, edit, and delete todos. It was created using Vue.js and Tailwind.",
     link: "https://vue-todo-app-barzdevs-projects.vercel.app",
@@ -47,6 +50,7 @@ export const portoList = [
   {
     id: 5,
     title: "POS",
+    category: "web",
     description:
       "This is a point of sales app created using Next.js, with two user roles: admin and user. Admin can view trascation history and user can use the POS.",
     link: "https://pos-front-end-next-js.vercel.app/login?callbackUrl=%2F",
@@ -63,6 +67,7 @@ export const portoList = [
   {
     id: 6,
     title: "Socmed Prototype",
+    category: "web",
     description:
       "This a prototype socmed build with MERN stack. With 3 dummy user which can be used to create post and comment, and can like a post as a feature too",
     link: "https://socmed-prototype.vercel.app/",

@@ -4,6 +4,7 @@ import { Button, Carousel } from "flowbite-react";
 import Image from "next/image";
 import Link from "next/link";
 import { DetailAccordion } from "./accordion";
+import clsx from "clsx";
 
 export function Galery(props) {
   const { porto } = props;
@@ -49,23 +50,32 @@ export function Galery(props) {
 }
 
 const Details = ({ porto }) => {
+  const border =
+    porto.category === "web" ? "border-cyan-500" : "border-lime-500";
+
   return (
-    <div className="md:px-24 p-5  h-80  border-2 border-cyan-500 rounded-lg">
+    <div
+      className={clsx(
+        "md:px-24 p-5  h-80  border-2 rounded-lg overflow-auto",
+        border
+      )}
+    >
       <h1 className="text-center font-bold text-2xl md:pb-10 pb-5">
         {porto.title}
       </h1>
       <p className="md:text-justify text-left text-sm md:text-base">
         {porto.description}
       </p>
-      <div>
+      <div className="flex flex-col items-end mt-5">
         <Button
           as={Link}
           href={porto.link}
-          target="blank"
+          target={porto.category === "web" ? "_blank" : undefined}
           color="dark"
           className="mt-2 sm:w-40 w-auto"
         >
-          Launch Demo
+          {porto.category === "web" ? " Launch Demo" : "Preview App"}
+
           <svg
             className="w-6 h-6 text-white ps-1"
             aria-hidden="true"

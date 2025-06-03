@@ -85,8 +85,8 @@ export function Skills() {
         <IconImage
           title="NodeJS"
           img="icon/nodejs.svg"
-          border="border-lime-500"
-          color="text-lime-500"
+          border="border-lime-600"
+          color="text-lime-600"
           hover="hover:w-32"
         />
         <IconImage
@@ -95,6 +95,20 @@ export function Skills() {
           border="border-red-500"
           color="text-red-500"
           hover="hover:w-28"
+        />
+        <IconImage
+          title="Kotlin"
+          img="icon/kotlin.svg"
+          border="border-purple-700"
+          color="text-purple-700"
+          hover="hover:w-28"
+        />
+        <IconImage
+          title="Compose"
+          img="icon/compose.svg"
+          border="border-blue-500"
+          color="text-blue-500"
+          hover="hover:w-32"
         />
       </div>
     </div>
