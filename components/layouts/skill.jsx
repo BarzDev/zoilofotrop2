@@ -5,7 +5,7 @@ export function Skills() {
   return (
     <div className="">
       <p className=" md:text-3xl text-2xl font-bold md:pb-10 pb-5 md:ps-48 ps-0 md:text-left text-center">
-        Skill
+        Skills and tech
       </p>
 
       <div className="flex flex-wrap gap-3 items-center justify-center">

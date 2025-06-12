@@ -1,10 +1,49 @@
 export const portoAndroid = [
   {
-    id: 1,
+    id: "story-app",
+    title: "Android Story Apps",
+    description:
+      "An Android app built with Kotlin and XML-based UI. Users can browse stories with locations, view story details, and create new stories using data fetched from a custom-built API. The app also features secure login and registration.",
+    link: "/porto/android/story-app",
+    img: [
+      "/portoAdrdStoryApp/1.jpeg",
+      "/portoAdrdStoryApp/2.jpeg",
+      "/portoAdrdStoryApp/3.jpeg",
+      "/portoAdrdStoryApp/4.jpeg",
+    ],
+    imgDesc: [
+      {
+        img: "/portoAdrdStoryApp/1.jpeg",
+        desc: "Story Location Page",
+      },
+      {
+        img: "/portoAdrdStoryApp/2.jpeg",
+        desc: "Story Page",
+      },
+      {
+        img: "/portoAdrdStoryApp/3.jpeg",
+        desc: "Story Detail",
+      },
+      {
+        img: "/portoAdrdStoryApp/4.jpeg",
+        desc: "Create Story Page",
+      },
+      {
+        img: "/portoAdrdStoryApp/5.jpeg",
+        desc: "Login Page",
+      },
+      {
+        img: "/portoAdrdStoryApp/6.jpeg",
+        desc: "Register Page",
+      },
+    ],
+  },
+  {
+    id: "e-commerce",
     title: "Android E-commerce",
     description:
       "This is an e-commerce web store created Kotlin, Compose, and some public APIs. It fetches products using public APIs, has a cart feature, and can create transaction history.",
-    link: "/porto/android/1",
+    link: "/porto/android/e-commerce",
     img: [
       "/portoAdrdStore/1.png",
       "/portoAdrdStore/2.png",
@@ -36,11 +75,11 @@ export const portoAndroid = [
     ],
   },
   {
-    id: 2,
+    id: "smart-city",
     title: "Android SmartCity",
     description:
-      "A capstone Android app built with Kotlin and Compose. It displays culinary, UMKM, and tourism catalogs, provides emergency numbers, and integrates with a custom-built API.",
-    link: "/porto/android/2",
+      "A capstone project for Android development. This is an android app built with Kotlin and Compose. It displays culinary, UMKM, and tourism catalogs, provides emergency numbers, and integrates with a custom-built API.",
+    link: "/porto/android/smart-city",
     img: [
       "/portoAdrdCapstone/1.jpeg",
       "/portoAdrdCapstone/2.jpeg",
@@ -84,37 +123,6 @@ export const portoAndroid = [
       {
         img: "/portoAdrdCapstone/9.jpeg",
         desc: "Tourism Detail",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Android Story Apps",
-    description:
-      "An Android app built with Kotlin and XML-based UI. Users can register, login, view stories from the Dicoding API, and post new stories with images.",
-    link: "/porto/android/3",
-    img: [
-      "/portoAdrdStoryApp/1.jpeg",
-      "/portoAdrdStoryApp/2.jpeg",
-      "/portoAdrdStoryApp/3.jpeg",
-      "/portoAdrdStoryApp/4.jpeg",
-    ],
-    imgDesc: [
-      {
-        img: "/portoAdrdStoryApp/1.jpeg",
-        desc: "Register Page",
-      },
-      {
-        img: "/portoAdrdStoryApp/2.jpeg",
-        desc: "Login Page",
-      },
-      {
-        img: "/portoAdrdStoryApp/3.jpeg",
-        desc: "Post Story",
-      },
-      {
-        img: "/portoAdrdStoryApp/4.jpeg",
-        desc: "Story Page",
       },
     ],
   },

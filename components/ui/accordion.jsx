@@ -22,7 +22,7 @@ export const DetailAccordion = (props) => {
             color="dark"
             className="mt-2 sm:w-40 w-auto"
           >
-            Launch Demo
+            {porto.category === "web" ? " Launch Demo" : "Preview App"}
             <svg
               className="w-6 h-6 text-white ps-1"
               aria-hidden="true"
